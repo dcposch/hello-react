@@ -9,10 +9,3 @@ export default function Cookie(props: { n: number }) {
     </h1>
   );
 }
-
-function pluralize(noun: string, n: number) {
-  if (n == 1) {
-    return noun;
-  }
-  return noun + "s";
-}
