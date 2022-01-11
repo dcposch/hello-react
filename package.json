@@ -1,0 +1,16 @@
+{
+  "name": "hello-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.tsx",
+  "scripts": {
+    "start": "esbuild app.tsx --bundle --servedir=www/ --outdir=www/js"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "esbuild": "^0.14.11",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
