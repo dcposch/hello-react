@@ -105,14 +105,12 @@ congratulations! your first React web app.
 to avoid excess, typing, add the following to your `package.json`
 
 ```jsonc
-  // ...
   "scripts": {
       "start": "esbuild app.tsx --bundle --servedir=www/ --outdir=www/js"
   }
-  // ...
 ```
 
-from now on, you can just type:
+from now on, you can just run:
 
 ```
 npm start     # shorthand for `npm run start`
