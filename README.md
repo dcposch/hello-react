@@ -129,6 +129,22 @@ should look something like this:
 ![image](https://user-images.githubusercontent.com/169280/148868473-ba98c4c6-98af-44e0-aafb-48ec63b31c3a.png)
 
 
+## step 3: deploy
+
+add a build script to your `package.json`:
+
+```
+  "scripts": {
+      // "start" as before
+      "build": "esbuild app.tsx --bundle --minify --outdir=www/js"
+  }
+```
+
+deploy to Netlify, using `npm run build` as the build command.
+
+> npm defines two shortcuts, `npm start` and `npm test`. anything else in `"scripts"` must be run using `npm run xyz`.
+
+
 ## bonus: prettier
 
 i recommend installing the Prettier extension in VS Code. then, configure format-on-save. one less thing to think about.
@@ -149,17 +165,3 @@ npm test
 ```
 
 ...to see your tests run.
-
-
-## bonus: deploy
-
-add a build script to your `package.json`:
-
-```
-  "scripts": {
-      // "start" as before
-      "build": "esbuild app.tsx --bundle --minify --outdir=www/js"
-  }
-```
-
-deploy to Netlify, using `npm run build` as the build command.
